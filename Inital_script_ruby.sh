@@ -12,14 +12,21 @@ echo "gem 'rubocop', '~> 0.57.2'" >> Gemfile
 echo "gem 'rubygems'" >> Gemfile
 echo "gem 'nokogiri'" >> Gemfile
 
-echo "Initial Bundle"
+echo "create folder lib"
 
-bundle install
+mkdir lib
+
+echo "create folder rspec"
+
+mkdir rspec
 
 echo "Initial Rspec"
 
 rspec --init
 
-echo "create folder lib"
+echo "Initial Bundle"
 
-mkdir lib
+bundle install
+
+
+
